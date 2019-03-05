@@ -14,15 +14,12 @@
     "plugins": [
         "react"
     ],
-     "parser": "babel-eslint",
-
     "rules": {
-      "react/require-render-return": 2,
-      "react/no-unused-state": 2,
-      "react/prefer-stateless-function": 2,
-      "no-console":"warn",
-      "no-unused-vars": "off",
-       "react/jsx-handler-names": 2,
+        "react/jsx-handler-names": 2,
+        "react/require-render-return": 2,
+        "react/no-unused-state": 2,
+        "react/prefer-stateless-function": 2,
+        "react/no-direct-mutation-state": 2,
         "react/jsx-key": 2,
         "react/jsx-uses-vars": 2,
         "react/jsx-uses-react": 2,
@@ -30,18 +27,18 @@
         "react/jsx-no-undef": 2,
         "react/no-multi-comp": 2,
         "react/jsx-indent-props": [
-            "off",
-            0
+            "error",
+            2
           ],
         "react/jsx-pascal-case": 2,
         "react/prop-types": 2,
         "react/jsx-indent": [
-            "off",
-            0
-        ],
+            "error",
+            2
+          ],
         "indent": [
-            "off",
-            0
+            "error",
+            2
         ],
         "linebreak-style": [
             "error",
@@ -52,7 +49,7 @@
             "single"
         ],
         "semi": [
-            "off",
+            "error",
             "always"
         ]
     }
